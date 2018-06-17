@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0 ,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Teoría de juegos</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="stylesheet" href="./css/style.css">
+     <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+
+  </head>
+
+  <body background="./images/imagen.PNG">
+
+    <header>
+      <div class="posCabecera">
+      <div class="Cabecera"></div>
+      </div>
+
+      <nav class="posEnlaces" >
+        <ul class="enlaceInicioReglas">
+
+          <li class="posInicio">
+            <div >
+              <a href="./index.html">
+                <div >
+                  <p class="letAntonEnlace">#Inicio</p>
+                </div>
+             </a>
+            </div>
+          </li>
+
+          <li class="posAplicaciones">
+            <div >
+              <a href="./Aplicaciones.html">
+                <div >
+                  <p class="letAntonEnlace">#Aplicaciones</p>
+                </div>
+             </a>
+            </div>
+          </li>
+
+          <li class="posGenerar">
+            <div >
+              <a href="./Generar.html">
+                <div >
+                  <p class="letAntonEnlace">#Generar</p>
+                </div>
+             </a>
+            </div>
+          </li>
+
+       </ul>
+      </nav>
+
+    </header>
+
+    <article >
+       <div class="posDilemadelReoTITULO">
+           <header>
+              <h1 class="letMonotonTitulo">GUERRA DE SEXOS</h1>
+           </header>
+       </div>
+
+       <div class="posDEFINICION"style="top: 390px;">
+           <h2 class="letAntonSub">CONTEXTO</h2>
+       </div>
+       <div class="posDEFINICIONpar"style=" top: 433px;">
+        <p class="letAntonSuperParr">
+          Una pareja discute sobre qué hacer el
+          fin de semana. Ambos saben que quieren pasar el fin de semana juntos,
+          pero no se ponen de acuerdo sobre qué hacer. El hombre prefiere ir a ver
+           un combate de boxeo, mientras que la mujer quiere ir de compras.</p>
+      </div>
+
+      <div class="posEQUILIBRIO"style="top: 507px;">
+          <h2 class="letAntonSub">REGLAS</h2>
+      </div>
+      <div class="posEQUILIBRIOpar" style= "top: 546px;">
+
+       <p class="letAntonSuperParr">
+         CEDER: Genera +2 Utilidad .</p>
+         <p class="letAntonSuperParr">
+         IMPONERSE:  Genera +1 Utilidad </p>
+           <p class="letAntonSuperParr">
+             UNO COMPRAS, OTRO BOXEO:Genera Utilidad (0,0)</p>
+
+     </div>
+     <div style=   "  left: 198px;
+
+    position: absolute;
+    margin-left: calc((100% - 980px) * 0.5);
+    top: 663px;">
+         <h2 class="letAntonSub">APLICACIÓN DE EQUILIBRIO DE NASH</h2>
+     </div>
+
+     <table class="miTabla">
+       <tr>
+         <th scope="row">HOMBRE/MUJER</th>
+         <th>BOXEO</th>
+         <th>COMPRAS</th>
+       </tr>
+       <tr>
+         <th>BOXEO</th>
+         <td>1,2</td>
+         <td>0,0</td>
+       </tr>
+       <tr>
+         <th>COMPRAS</th>
+         <td>0,0</td>
+         <td>2,1</td>
+       </tr>
+     </table>
+
+     <div style=   "left: 198px;
+     width: 87px;
+     position: absolute;
+     margin-left: calc((100% - 980px) * 0.5);
+     top: 830px; ">
+         <h2 class="letAntonSub"style="font-size: 25px; color:#fcfd46;">ANÁLISIS</h2>
+     </div>
+
+     <div style=   "left: 198px;
+     width: 244px;
+     position: absolute;
+     margin-left: calc((100% - 980px) * 0.5);
+     top: 880px; ">
+         <h2 class="letAntonSub"style="font-size: 15px;color:#7474ae;">ESTRATEGIA MIXTA</h2>
+     </div>
+     <div  style= "left: 198px;
+         width: 586px;
+         position: absolute;
+         margin-left: calc((100% - 980px) * 0.5);
+         top: 910px;">
+
+      <p class="letAntonSuperParr">
+           Estrategia en las que nos fijamos en la probabilidad
+           de que nuestro oponente elija una u otra estrategia y valorar nuestros pagos
+            dada esa probabilidad.</p>
+            <p class="letAntonSuperParr">
+              Equilibrio de Nash en "Estrategias Mixtas" = {(Boxeo, Boxeo)}</p>
+              <p class="letAntonSuperParr">
+                Equilibrio de Nash en "Estrategias Mixtas" = {(Compras, Compras)}</p>
+    </div>
+</article >
+<div class="posCabecera" style="top:155%;height:10%" >
+<div class="Cabecera"></div>
+</div>
+</body>
+</html>

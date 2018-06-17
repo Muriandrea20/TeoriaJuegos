@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0 ,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Teoría de juegos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+     <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+
+  </head>
+
+  <body background="./images/imagen.PNG">
+
+    <header>
+      <div class="posCabecera">
+      <div class="Cabecera"></div>
+      </div>
+
+      <nav class="posEnlaces" >
+        <ul class="enlaceInicioReglas">
+
+          <li class="posInicio">
+            <div >
+              <a href="./index.html">
+                <div >
+                  <p class="letAntonEnlace">#Inicio</p>
+                </div>
+             </a>
+            </div>
+          </li>
+
+          <li class="posAplicaciones">
+            <div >
+              <a href="./Aplicaciones.html">
+                <div >
+                  <p class="letAntonEnlace">#Aplicaciones</p>
+                </div>
+             </a>
+            </div>
+          </li>
+
+          <li class="posGenerar">
+            <div >
+              <a href="./Generar.html">
+                <div >
+                  <p class="letAntonEnlace">#Generar</p>
+                </div>
+             </a>
+            </div>
+          </li>
+
+       </ul>
+      </nav>
+
+    </header>
+
+    <article >
+       <div class="posDilemadelReoTITULO" style="width:900px;left:60px;">
+           <header>
+              <h1 class="letMonotonTitulo">HÁLCON VS PALOMA</h1>
+           </header>
+       </div>
+
+       <div class="posDEFINICION"style="top: 390px;">
+           <h2 class="letAntonSub">CONTEXTO</h2>
+       </div>
+       <div class="posDEFINICIONpar"style=" top: 433px;">
+        <p class="letAntonSuperParr">
+          El Halcón pelea siempre por el recurso hasta dañar o matar al
+          contendiente (pero también corren el riesgo de sufrir daños
+           en la contienda) y la paloma realiza despliegues pero nunca se
+           involucran en contiendas.</p>
+      </div>
+
+      <div class="posEQUILIBRIO"style="top: 507px;">
+          <h2 class="letAntonSub">REGLAS</h2>
+      </div>
+      <div class="posEQUILIBRIOpar" style= "top: 546px;">
+
+       <p class="letAntonSuperParr">
+         Recursos:50  ; Costos:100</p>
+         <p class="letAntonSuperParr">
+         HALCÓN - PALOMA  +Recurso = 50</p>
+           <p class="letAntonSuperParr">
+            HALCÓN -HALCÓN  (+Recursos-Costos de pelea)/2 (GANA LA MITAD DE VECES)= -25</p>
+             <p class="letAntonSuperParr">
+              PALOMA – HALCÓN Recurso= 0</p>
+               <p class="letAntonSuperParr">
+               PALOMA - PALOMA  +Recurso/2  C/U  (Comparten) = 25 </p>
+     </div>
+     <div style=   "  left: 198px;
+
+    position: absolute;
+    margin-left: calc((100% - 980px) * 0.5);
+    top: 663px;">
+         <h2 class="letAntonSub">APLICACIÓN DE EQUILIBRIO DE NASH</h2>
+     </div>
+
+     <table class="miTabla">
+       <tr>
+         <th scope="row"></th>
+         <th>HÁLCON</th>
+         <th>PALOMA</th>
+       </tr>
+       <tr>
+         <th>HÁLCON</th>
+         <td>(R-C)/2</td>
+         <td>0</td>
+       </tr>
+       <tr>
+         <th>PALOMA</th>
+         <td>R</td>
+         <td>R/2</td>
+       </tr>
+     </table>
+
+     <table class="miTabla" style="top:700px;">
+       <tr>
+         <th scope="row"></th>
+         <th>HÁLCON</th>
+         <th>PALOMA</th>
+       </tr>
+       <tr>
+         <th>HÁLCON</th>
+         <td>-25</td>
+         <td>0</td>
+       </tr>
+       <tr>
+         <th>PALOMA</th>
+         <td>50</td>
+         <td>25</td>
+       </tr>
+     </table>
+
+     <div style=   "left: 198px;
+     width: 87px;
+     position: absolute;
+     margin-left: calc((100% - 980px) * 0.5);
+     top: 930px; ">
+         <h2 class="letAntonSub"style="font-size: 25px; color:#fcfd46;">ANÁLISIS</h2>
+     </div>
+
+     <div style=   "left: 198px;
+     width: 244px;
+     position: absolute;
+     margin-left: calc((100% - 980px) * 0.5);
+     top: 970px; ">
+         <h2 class="letAntonSub"style="font-size: 15px;color:#7474ae;">ESTRATEGIA EVOLUTIVAMENTE ESTABLE </h2>
+     </div>
+     <div  style= "left: 198px;
+         width: 586px;
+         position: absolute;
+         margin-left: calc((100% - 980px) * 0.5);
+         top: 1000px;">
+
+      <p class="letAntonSuperParr">
+           Estrategia en la que el pago (beneficio)  depende de la estrategia en
+            sí misma y contra quien se utilice y no del individuo que la utiliza y en dónde una vez que se
+             fija una población, la selección natural por sí sola es suficiente
+              para impedir estrategias alternativas (mutantes) de invadir con éxito. </p>
+            <p class="letAntonSuperParr">
+              COSTO DE PELEA > RECURSO          EEE MIXTA </p>
+              <p class="letAntonSuperParr">
+                POBLACIÓN HALCONES = RECURSO/COSTO        EEE  PARA NO CAMBIAR DE ESTRATEGIA  </p>
+               <p class="letAntonSuperParr">
+              RECURSO > COSTO DE PELEA         EEE PURA    </p>
+
+    </div>
+</article >
+      <div class="posCabecera" style="top:155%;height:10%" >
+<div class="Cabecera"></div>
+</div>
+</body>
+</html>
